@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="none">
+<defs>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ff1f2b" stop-opacity="0"/>
+    <stop offset=".35" stop-color="#ff3340"/>
+    <stop offset=".65" stop-color="#fff"/>
+    <stop offset="1" stop-color="#ff1f2b" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+ <path d="M-40 110 L130 80 190 145 300 115 365 180 470 130 535 200 650 155 735 220 820 175" stroke="url(#lg)" stroke-width="3" opacity=".9">
+  <animate attributeName="opacity" values=".15;.9;.25;.75;.1" dur="2.8s" repeatCount="indefinite"/>
+ </path>
+ <path d="M1600 120 L1470 90 1415 165 1320 120 1260 205 1160 160 1080 225 970 180" stroke="url(#lg)" stroke-width="3" opacity=".8">
+  <animate attributeName="opacity" values=".1;.75;.2;.95;.1" dur="3.4s" begin=".6s" repeatCount="indefinite"/>
+ </path>
+ <path d="M20 780 L145 740 205 790 290 730 355 785 455 720 530 770 635 705 720 755" stroke="url(#lg)" stroke-width="4" opacity=".75">
+  <animate attributeName="opacity" values=".15;.85;.1;.65;.15" dur="3.1s" begin=".9s" repeatCount="indefinite"/>
+ </path>
+ <path d="M1590 760 L1480 720 1410 775 1320 710 1240 770 1140 700 1040 755 960 690" stroke="url(#lg)" stroke-width="4" opacity=".8">
+  <animate attributeName="opacity" values=".1;.9;.25;.7;.1" dur="2.5s" begin="1.1s" repeatCount="indefinite"/>
+ </path>
+ <path d="M210 0 L250 90 225 145 295 225 260 285 340 360 300 430 370 520 330 590 410 690 370 790 430 900" stroke="#ff2632" stroke-width="2.5" opacity=".55">
+  <animate attributeName="opacity" values=".05;.65;.1;.8;.05" dur="4s" begin=".2s" repeatCount="indefinite"/>
+ </path>
+ <path d="M1390 0 L1350 95 1385 155 1310 235 1350 305 1270 390 1310 470 1235 555 1270 640 1195 735 1230 900" stroke="#ff2632" stroke-width="2.5" opacity=".55">
+  <animate attributeName="opacity" values=".05;.8;.1;.65;.05" dur="3.7s" begin="1.4s" repeatCount="indefinite"/>
+ </path>
+</g>
+<g fill="#ff3340">
+ <circle cx="188" cy="146" r="2.5"><animate attributeName="opacity" values="0;.9;0" dur="1.6s" repeatCount="indefinite"/></circle>
+ <circle cx="1414" cy="166" r="2.5"><animate attributeName="opacity" values="0;.9;0" dur="1.9s" begin=".7s" repeatCount="indefinite"/></circle>
+ <circle cx="292" cy="732" r="2.5"><animate attributeName="opacity" values="0;.9;0" dur="1.7s" begin="1s" repeatCount="indefinite"/></circle>
+ <circle cx="1320" cy="711" r="2.5"><animate attributeName="opacity" values="0;.9;0" dur="2.1s" begin=".4s" repeatCount="indefinite"/></circle>
+</g>
+</svg>
